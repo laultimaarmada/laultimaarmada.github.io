@@ -105,6 +105,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const img = new Image();
         img.src = src;
     });
+
+    // Funcionalidad del botón Scroll to Top
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    // Mostrar/ocultar el botón según el scroll
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Volver arriba al hacer clic
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
 
 // Optimización del parallax con RequestAnimationFrame
