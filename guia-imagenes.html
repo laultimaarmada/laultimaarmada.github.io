@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Imágenes - Armada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Arial Black', Arial, sans-serif;
+            background: #0d0d0d;
+            background-image:
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 35px,
+                    rgba(139, 22, 22, 0.03) 35px,
+                    rgba(139, 22, 22, 0.03) 70px
+                );
+            color: #e8e8e8;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b91e1e;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            text-shadow:
+                2px 2px 0 #5a0a0a,
+                0 0 20px rgba(185, 30, 30, 0.5);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #1a0f0f 0%, rgba(90, 10, 10, 0.3) 100%);
+            padding: 2rem;
+            border-left: 4px solid #b91e1e;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            color: #b91e1e;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px rgba(185, 30, 30, 0.4);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .image-placeholder {
+            background: #1a0f0f;
+            border: 2px dashed #b91e1e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(185, 30, 30, 0.2);
+        }
+
+        .image-placeholder::after {
+            content: attr(data-label);
+            position: absolute;
+            background: linear-gradient(135deg, #8c1616 0%, #b91e1e 100%);
+            color: #e8e8e8;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .landscape {
+            height: 300px;
+        }
+
+        .banner {
+            height: 200px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .gallery-item {
+            width: calc(33.333% - 1rem);
+            height: 150px;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        .info {
+            background: #252525;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 3px solid #666;
+        }
+
+        .info strong {
+            color: #c9a227;
+        }
+
+        code {
+            background: #1a1a1a;
+            padding: 0.2rem 0.5rem;
+            color: #c9a227;
+            border-radius: 3px;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            color: #b0b0b0;
+        }
+
+        .download-section {
+            background: #c9a227;
+            color: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .download-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #c9a227;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Guía de Imágenes para La Última Armada</h1>
+
+        <div class="download-section">
+            <h3>🔥 Fuentes de Imágenes Recomendadas</h3>
+            <p>Puedes obtener imágenes de World of Warcraft de:</p>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li>• Screenshots de tu propio juego (F12 o Imprime Pantalla)</li>
+                <li>• Renders de personajes desde el Armory de WoW</li>
+                <li>• Blizzard Press Center (imágenes oficiales de alta calidad)</li>
+                <li>• Wowhead.com (renders y artwork)</li>
+                <li>• Tu colección personal de logros y victorias del clan</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>1. Hero Background (Imagen Principal)</h2>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/hero-background.jpg</code></p>
+                <p><strong>Dimensiones:</strong> 1920x1080px (Full HD)</p>
+                <p><strong>Uso:</strong> Imagen de fondo para la sección principal de la página</p>
+            </div>
+            <div class="image-placeholder landscape" data-label="HERO BACKGROUND - 1920x1080px">
+            </div>
+            <p><strong>Sugerencias:</strong></p>
+            <ul>
+                <li>Paisaje épico de WoW (Stormwind, Orgrimmar, Icecrown, etc.)</li>
+                <li>Screenshot del clan reunido en una ubicación icónica</li>
+                <li>Boss fight dramático</li>
+                <li>Artwork oficial de WoW de alta calidad</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. Banners Parallax</h2>
+
+            <h3>2.1 Raid Banner</h3>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/raid-banner.jpg</code></p>
+                <p><strong>Dimensiones:</strong> 1920x600px</p>
+            </div>
+            <div class="image-placeholder banner" data-label="RAID BANNER - 1920x600px"></div>
+
+            <h3 style="margin-top: 2rem;">2.2 PvP Banner</h3>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/pvp-banner.jpg</code></p>
+                <p><strong>Dimensiones:</strong> 1920x600px</p>
+            </div>
+            <div class="image-placeholder banner" data-label="PVP BANNER - 1920x600px"></div>
+
+            <h3 style="margin-top: 2rem;">2.3 Clan Banner</h3>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/clan-banner.jpg</code></p>
+                <p><strong>Dimensiones:</strong> 1920x600px</p>
+            </div>
+            <div class="image-placeholder banner" data-label="CLAN BANNER - 1920x600px"></div>
+        </div>
+
+        <div class="section">
+            <h2>3. Galería de Victorias (6 imágenes)</h2>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/gallery/</code></p>
+                <p><strong>Nombres:</strong> victory-1.jpg, victory-2.jpg, victory-3.jpg, victory-4.jpg, victory-5.jpg, victory-6.jpg</p>
+                <p><strong>Dimensiones:</strong> 1280x720px (ratio 16:9)</p>
+            </div>
+            <div>
+                <div class="image-placeholder gallery-item" data-label="victory-1.jpg"></div>
+                <div class="image-placeholder gallery-item" data-label="victory-2.jpg"></div>
+                <div class="image-placeholder gallery-item" data-label="victory-3.jpg"></div>
+                <div class="image-placeholder gallery-item" data-label="victory-4.jpg"></div>
+                <div class="image-placeholder gallery-item" data-label="victory-5.jpg"></div>
+                <div class="image-placeholder gallery-item" data-label="victory-6.jpg"></div>
+            </div>
+            <p><strong>Sugerencias de contenido:</strong></p>
+            <ul>
+                <li>Primera kill de boss mítico de la temporada</li>
+                <li>Logros de Cutting Edge</li>
+                <li>Torneos PvP ganados</li>
+                <li>Monturas legendarias conseguidas</li>
+                <li>Eventos especiales del clan</li>
+                <li>Screenshots de celebraciones</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Líderes del Clan (4 imágenes)</h2>
+            <div class="info">
+                <p><strong>Ubicación:</strong> <code>./images/leaders/</code></p>
+                <p><strong>Nombres:</strong> leader-1.jpg, leader-2.jpg, leader-3.jpg, leader-4.jpg</p>
+                <p><strong>Dimensiones:</strong> 500x500px (cuadradas)</p>
+            </div>
+            <div>
+                <div class="image-placeholder square" data-label="leader-1.jpg (Guild Master)"></div>
+                <div class="image-placeholder square" data-label="leader-2.jpg (Raid Leader)"></div>
+                <div class="image-placeholder square" data-label="leader-3.jpg (PvP Officer)"></div>
+                <div class="image-placeholder square" data-label="leader-4.jpg (Recruitment Officer)"></div>
+            </div>
+            <p><strong>Sugerencias:</strong></p>
+            <ul>
+                <li>Render 3D del personaje (desde Armory o Wowhead)</li>
+                <li>Portrait del personaje con equipo épico</li>
+                <li>Screenshot del personaje en pose heroica</li>
+                <li>Fondo oscuro o transparente funciona mejor</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎨 Tips de Optimización</h2>
+            <ul>
+                <li><strong>Comprime tus imágenes:</strong> Usa herramientas como TinyPNG, Squoosh o ImageOptim</li>
+                <li><strong>Formato recomendado:</strong> JPG para fotografías y screenshots (mejor compresión)</li>
+                <li><strong>Calidad sugerida:</strong> 80-85% en JPG para balance entre calidad y peso</li>
+                <li><strong>Peso máximo:</strong> Intenta que cada imagen no supere 500KB</li>
+                <li><strong>Nombres de archivo:</strong> Sin espacios, usa guiones: hero-background.jpg ✓, hero background.jpg ✗</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Herramientas Útiles</h2>
+            <ul>
+                <li><strong>TinyPNG:</strong> <a href="https://tinypng.com" target="_blank">tinypng.com</a> - Compresión de imágenes online</li>
+                <li><strong>Squoosh:</strong> <a href="https://squoosh.app" target="_blank">squoosh.app</a> - Editor y compresor de imágenes</li>
+                <li><strong>WoW Armory:</strong> Obtén renders de tus personajes</li>
+                <li><strong>Wowhead:</strong> <a href="https://www.wowhead.com" target="_blank">wowhead.com</a> - Renders y artwork</li>
+                <li><strong>ShareX:</strong> Herramienta para capturas de pantalla (Windows)</li>
+                <li><strong>Kap:</strong> Grabador de pantalla (macOS)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📋 Checklist</h2>
+            <ul style="list-style: none;">
+                <li>☐ Crear carpetas: images/, images/gallery/, images/leaders/</li>
+                <li>☐ Conseguir/crear hero-background.jpg (1920x1080px)</li>
+                <li>☐ Conseguir/crear raid-banner.jpg (1920x600px)</li>
+                <li>☐ Conseguir/crear pvp-banner.jpg (1920x600px)</li>
+                <li>☐ Conseguir/crear clan-banner.jpg (1920x600px)</li>
+                <li>☐ Conseguir/crear 6 imágenes para galería (1280x720px)</li>
+                <li>☐ Conseguir/crear 3 imágenes de líderes (500x500px)</li>
+                <li>☐ Optimizar todas las imágenes (comprimir)</li>
+                <li>☐ Verificar que los nombres de archivo coincidan exactamente</li>
+                <li>☐ Personalizar textos en index.html (nombres, info de contacto, etc.)</li>
+                <li>☐ Probar la página en el navegador</li>
+            </ul>
+        </div>
+
+        <div class="download-section">
+            <h3>🚀 ¿Listo para empezar?</h3>
+            <p>Una vez que tengas todas las imágenes en su lugar, abre <code>index.html</code> en tu navegador.</p>
+            <p style="margin-top: 1rem;">Si no ves las imágenes, verifica que:</p>
+            <ul style="list-style: none; margin-top: 0.5rem;">
+                <li>1. Las rutas de las carpetas sean correctas</li>
+                <li>2. Los nombres de archivo coincidan exactamente (minúsculas/mayúsculas importan)</li>
+                <li>3. Las imágenes estén en formato JPG o PNG</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
